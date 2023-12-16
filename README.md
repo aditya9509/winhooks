@@ -26,9 +26,14 @@ This project provides a mechanism to capture and display information about the W
 
    - The main event listener responsible for registering the hook and hook procedure, and listening to hook events.
 
-### How to Compile
+### How to Compile & Run
 
 To compile the `hookEventListener.cpp`, run the following `g++` command:
 
 ```bash
 g++ hookEventListener.cpp mousecallbackhook.cpp processinformation.cpp -o hookEventListener -lPsapi
+```
+
+This command compiles the main event listener, hook procedure implementation, and process information retrieval implementation into an executable named hookEventListener. `The -lPsapi` flag links the Psapi library, which is required for process information retrieval.
+
+To run the program, execute `hookEventListener.exe` executable.
